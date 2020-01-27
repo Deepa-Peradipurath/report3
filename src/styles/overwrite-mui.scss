@@ -1,0 +1,96 @@
+@import "./variables";
+
+.MuiInputBase-root{
+    border:$input-border-color  solid 1px !important;
+    background-color: white !important;
+    box-shadow: 0px 1px 3px #0000000D ;
+    border-radius: 4px;
+}
+table .MuiSvgIcon-root , .MuiCircularProgress-root{
+    color: $icon-variant1-color;
+}
+.MuiDrawer-paper .MuiSvgIcon-root{
+    color: $icon-secondary-color;
+}
+.MuiBreadcrumbs-root{
+    font-size: 0.667rem;
+    .MuiTypography-body1{
+        font-size: 0.667rem;
+        color: $text-HightLight-color;
+    }
+}
+.MuiTabs-indicator{
+    background-color:$tab-hover-border-color;
+}
+.template {
+    margin: 0 dp(20);
+    box-sizing: border-box;
+    .table-container{
+        display: inline-block;
+         width: 100%;
+        i {
+            color: #74b1ef;
+        }
+        .MuiSwitch-colorSecondary.Mui-checked + .MuiSwitch-track{
+            background-color: rgb(66, 172, 66);
+        }
+        .MuiSwitch-colorSecondary.Mui-checked {
+            color:rgb(65, 179, 65);
+        }
+        .MuiOutlinedInput-notchedOutline {
+            border: none;
+        }
+        .MuiOutlinedInput-notchedOutline {
+            border-color: white;
+        }
+        .MuiOutlinedInput-notchedOutline{
+            border: none !important;
+        }
+     
+     
+        // .MuiToolbar-root {
+        //     display: inline-flex !important;
+        // }
+        // .MuiTableCell-stickyHeader {
+        //     background-color: #74b1ef;
+        //     color: white;
+           
+          
+        // }
+    }
+    
+
+}
+
+.MuiOutlinedInput-notchedOutline{
+    border: none !important;
+}
+.makeStyles-selectEmpty-103 {
+    margin-top: 7px !important ;
+    width: 225px;
+    border-radius: 4px;
+    height: 44px;
+    text-decoration: none;
+    border: none;
+    padding: 10px;
+    border-bottom: none;
+    background: white;
+}
+.MuiInput-underline:before {
+    border-bottom: none !important;
+}
+.alignRight{
+    justify-content: flex-end;
+    text-align: right;
+}
+.helper-text {
+    font-size: 0.56rem;
+    font-weight: 400;
+    color: #414547;
+    opacity: 0.6;
+    text-align: right;
+    margin-bottom: -5px;
+}
+
+   
+

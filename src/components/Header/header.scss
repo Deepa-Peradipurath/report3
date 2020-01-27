@@ -1,0 +1,78 @@
+@import "../../styles/variables";
+
+.sideDrawer{
+    .MuiDrawer-paper {
+        top:89px;
+        height:88%;
+        background-color: $theme-primary-color;
+        .active {
+            color :$text-HightLight-color;
+        }
+    }
+
+}
+//Appbar
+.grow {
+    flex-grow: 1;
+  }
+  .menuButton {
+      margin-right: 15px;
+    //marginRight: theme.spacing(2),
+  }
+  .title {
+    display: none;
+    @media #{$breakpoint-gt600} {
+        display: block;
+        color:$text-HightLight-color;
+        font-size: 1.2rem;
+        border-left: 1px solid gray;
+        padding-left: 15px;
+    }
+  }
+  .search {
+    position: relative;
+    border-radius: 4px;
+    background-color:rgba(255,255,255,0.15);
+    &:hover{
+        background-color:rgba(255,255,255,0.25);
+    }
+    margin-right: 15px;
+    margin-left: 0;
+    width:100%;
+    @media #{$breakpoint-gt960} {
+        margin-left:15px;
+        width:auto;
+    }
+    }
+  .searchIcon{
+    //width: theme.spacing(7),
+    height: 100%;
+    position: absolute;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  inputRoot {
+    color: inherit;
+  }
+  inputInput {
+    padding: 15px;
+    //transition: theme.transitions.create('width'),
+    width: 100%;
+    @media #{$breakpoint-gt960} {
+        width:200px;
+    }
+  }
+  .sectionDesktop {
+    display: none;
+    @media #{$breakpoint-gt960} {
+        display: flex;
+    }
+  }
+  .sectionMobile {
+      display: flex;
+      @media #{$breakpoint-gt960} {
+          display: none;
+        }
+  }

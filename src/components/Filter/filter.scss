@@ -1,0 +1,37 @@
+@import "../../styles/variables";
+
+.inlineList {
+    display: inline-flex;
+    flex-direction: row;
+    padding: 0;
+    width:100%;
+    .listItemLeft {
+        width :auto;
+        justify-content: flex-start;
+        padding-left: 0;
+        padding-right: 0;
+        white-space: nowrap;
+    }
+    .listItemRight {
+        width:100%;
+        .MuiFormControl-root{ width:100%;}
+    }        
+    @media #{$breakpoint-lt600} {
+        width: dp(968);
+        .listItemLeft {
+            width:100%;
+        }
+        .listItemRight{ padding: 0; }
+    }
+}
+.customForm  {
+    margin-bottom : 0;
+  }
+  .buttonWrapper {
+    text-align: right;
+    @media #{$breakpoint-lt600} {
+        margin-top:-15px;
+        margin-bottom:15px;
+    }
+} 
+  

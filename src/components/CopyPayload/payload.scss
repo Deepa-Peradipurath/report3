@@ -1,0 +1,19 @@
+
+.payload-container{
+	.payload-title {
+		padding:10px;
+
+	}
+	.payload-sample {
+		width:90%;
+		margin: auto !important;
+		 min-height:100px;
+		border: 1px solid rgb(51, 50, 50);
+		border-radius: 4px;
+		padding:5px;
+	}
+	.payload-button {
+		text-align: right;
+		margin:auto;
+	}
+}

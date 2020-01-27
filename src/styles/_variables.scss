@@ -1,0 +1,49 @@
+/* ....Same colors set in MUI theme in pages/app.js.... */
+
+//Common color
+$white :#fff;
+
+//Application Theme 
+$theme-primary-color :#233B58;
+$theme-secondary-color :#4FB218;
+$site-title-color :#45B6FA;
+
+//Background color
+$bg-color-default :#ffffff;
+$bg-color-variant2 : #ECF3F7;
+
+//text
+$text-HightLight-color :#3993CE;
+
+//Table
+$table-header-color:#3993CE;
+$table-hover-color :#ECF3F7;
+
+//Tab
+$tab-header-color:#3993CE;
+$tab-hover-border-color :#FF7136;
+$tab-header-success-color : #4FB218;
+
+// Form element
+$input-border-color :#E9EBEE;
+
+//Button 
+$button-primary :#4FB218;
+$button-secondary :$white;
+
+//Icon 
+$icon-primary-color :#000000;
+$icon-secondary-color :#ffffff;
+$icon-variant1-color :#3993CE; 
+
+//Pagination
+$pagination-bg-color :#DEF0FB; 
+
+//Breakpoint
+$breakpoint-lt600: 'only screen and (max-width: 600px)';
+$breakpoint-lt960: 'only screen and (max-width: 960px)';
+$breakpoint-gt600: 'only screen and (min-width: 600px)';
+$breakpoint-gt960: 'only screen and (min-width: 960px)';
+
+
+

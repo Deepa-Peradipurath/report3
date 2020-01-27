@@ -1,0 +1,28 @@
+@import '../../styles/variables';
+
+.root {
+    width: 100%;
+  }
+.tableContainer {
+    max-height: 440;
+    .table {
+        margin-bottom: 0;
+      }
+    .tableRow {
+        &:hover {
+            background-color: $table-hover-color !important;
+        }
+      }
+      .stickyHeader {
+        background-color: $table-header-color;
+        color: $white ;
+      }  
+  }
+  .paginaion {
+    display: inline-flex;
+    background-color: $pagination-bg-color;
+    width:100%;
+    justify-content: center;
+  }
+
+

@@ -1,0 +1,17 @@
+@import "../../styles/variables";
+
+.appbar-container {
+    flex-grow: 1;
+    .form-header-app-bar {
+        background-color: $tab-header-color;
+        box-shadow: none;
+    }
+    .tab-header-success-color{
+        background-color:  $tab-header-success-color
+    }
+}
+.title {
+    flex-grow: 1;
+    margin:0;
+
+}

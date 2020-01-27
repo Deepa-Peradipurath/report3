@@ -1,0 +1,109 @@
+@import "../../styles/variables";
+
+.subtext-helper {
+    float: right;
+    font-size: 10px;
+    padding-top: 8px;
+}
+.create-template-form-container {
+    box-shadow: 3px 2px 4px #0000001A;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    padding: 0;
+    .channel-type-container {
+        background: $bg-color-variant2 0% 0% no-repeat padding-box;
+        padding :30px;
+        .channel-drop-down {
+            width: 100%;
+        }
+        .notification-type-content {
+            padding-left: 38px;
+        }
+        .notification-type-drop-down {
+            height: 44px;
+            width: 276px;
+            border-radius: 4px;
+            padding-top: 17px;
+        }
+       
+        // .template-drop-down-content {
+        //     //font-size: 14px;
+        //     //font-weight: 400;
+        //     //background: #FFFFFF 0% 0% no-repeat padding-box;
+        //     //color: #3993CE;
+        // }
+    }
+    .inactive-container {
+        opacity: .4;
+        pointer-events: none; 
+    }
+    .template-name-container {
+        padding-top: 30px;
+        padding-left: 30px;
+        .input-field {
+            width:100%;
+        }
+    }
+    .content-container {
+        padding :30px;
+        .content-input-field {
+            width: 100%;
+            @media #{$breakpoint-lt600} {
+                height: 400px;
+                overflow: auto;
+            }
+        }
+
+        .parameter-container {
+            height: 652px;
+            overflow: auto;
+            background: $bg-color-variant2 0% 0% no-repeat padding-box;
+            .parameter-input-field {
+                width: 100%;
+                padding-bottom: 20px;
+                position: relative;
+                .MuiInputAdornment-root{
+                    position: absolute;
+                    right: 2px;
+                    top: 21px;
+                }
+            }
+            .parameter-input-container {
+                padding: 20px;
+                padding-top: 20px;
+            }
+            .parameter-content {
+                color: #414547;
+                font-size: 14px;
+                font-weight: bold;
+                padding-bottom: 10px;
+            }
+            .parameter-radio-container {
+                position: relative;
+                .parameter-radio-list {
+                    color: #414547;
+                }
+                .radio-list-container {
+                    padding-top: 15px;
+                }
+                .icon-container {
+                    position: absolute;
+                    top: 7px;
+                    right: 0;
+                    color: #3993CE;
+                }
+            }
+        @media #{$breakpoint-lt600} {
+            height: 400px;
+            overflow: auto;
+        }    
+            
+        }
+    }
+    .create-template-action-container {
+        padding-left: 22px;
+        padding-top: 15px;
+    }
+    .buttonWrapper{
+        padding:0 30px 30px;
+    }
+}
