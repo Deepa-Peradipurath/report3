@@ -60,9 +60,11 @@ const App = () => {
         <Provider store={ store }>
             <MuiThemeProvider theme = { theme }>
                 <Layout>
+                    
                     <SEO title="App" />
                         <div className = {classes.page}>
-                            <AppRouter/>
+                        <button>Install App</button>
+                            
                         </div>  
                 </Layout>
             </MuiThemeProvider> 

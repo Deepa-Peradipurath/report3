@@ -54,6 +54,7 @@ const IndexPage = () => (
       <SEO title="Home" />
       <MuiThemeProvider theme = { theme }>
       <h1>UI-Admin Notification Report Landing Page</h1>
+      <button>Install App</button>
       </MuiThemeProvider> 
       
     </Layout>

@@ -40,7 +40,28 @@ module.exports = {
         showSpinner: true,
       },
     },
-    
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `MyPepsiCo`,
+        short_name: `MyPepsiCo`,
+        start_url: `/`,
+        scope: process.env.HOME_URL,
+        background_color: `#002c5f`,
+        theme_color: `#fa9614`,
+        display: `fullscreen`,
+        icon: `src/data/images/pepsico.png`,
+        crossOrigin: `use-credentials`,
+        legacy: false,
+        include_favicon: false,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-offline`,
+      options: {
+        appendScript: require.resolve(`${__dirname}/src/data/service-web/sw-code.js`),
+      },
+    },
     // Commenting out the manifest plugin for now
     // {
     //   resolve: `gatsby-plugin-manifest`,
