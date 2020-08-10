@@ -1,4 +1,4 @@
-import React from "react"
+import React ,{ useEffect , useState } from "react"
 import {Provider} from "react-redux"
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles'; 
 
@@ -48,18 +48,39 @@ const theme = createMuiTheme({
   }
 });
 
-const IndexPage = () => (
-  <Provider store={ store }>
-    <Layout>
-      <SEO title="Home" />
-      <MuiThemeProvider theme = { theme }>
-      <h1>UI-Admin Notification Report Landing Page</h1>
-      <button>Install App</button>
-      </MuiThemeProvider> 
-      
-    </Layout>
-  </Provider>
-  
-)
+const IndexPage = () => {
+  const [deferredPrompt, setDeferredPrompt] = useState(null);
+  useEffect(() => {
+    window.addEventListener('beforeinstallprompt', function (event) {
+      event.preventDefault();
+      setDeferredPrompt(event);
+    });
+  }, []);
+  const installApp = () => {
+    deferredPrompt.prompt();
+    deferredPrompt.userChoice.then((choiceResult) => {
+      if (choiceResult.outcome === 'accepted') {
+        console.log('User accepted the A2HS prompt');
+      } else {
+        console.log('User dismissed the A2HS prompt');
+      }
+      setDeferredPrompt(null);
+    });
+  };
+  return (
+    <Provider store={ store }>
+      <Layout>
+        <SEO title="Home" />
+        <MuiThemeProvider theme = { theme }>
+        <h1>UI-Admin Notification Report Landing Page</h1>
+        <button onClick={installApp}>Install App</button>
+        </MuiThemeProvider> 
+        
+      </Layout>
+    </Provider>
+    
+  )
+}
+
 
 export default IndexPage
