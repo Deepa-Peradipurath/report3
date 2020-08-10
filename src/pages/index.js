@@ -1,11 +1,12 @@
-import React ,{ useEffect , useState } from "react"
-import {Provider} from "react-redux"
+import React ,{ useEffect , useState } from "react";
+import {Provider} from "react-redux";
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles'; 
 
-import Layout from "../components/layout"
+import Layout from "../components/layout";
 //import Image from "../components/image"
-import SEO from "../components/seo"
-import { store } from "../store" 
+import SEO from "../components/seo";
+import { store } from "../store" ;
+import { isMobile, isBrowser , browserName } from 'react-device-detect';
 
 const theme = createMuiTheme({
   palette: {
@@ -51,6 +52,11 @@ const theme = createMuiTheme({
 const IndexPage = () => {
   const [deferredPrompt, setDeferredPrompt] = useState(null);
   useEffect(() => {
+    console.log("isMobile...")
+      console.log(isMobile)
+      console.log("isBrowser...")
+      console.log(isBrowser)
+      console.log('******browserName***********', browserName);
     window.addEventListener('beforeinstallprompt', function (event) {
       event.preventDefault();
       setDeferredPrompt(event);
