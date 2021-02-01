@@ -3,7 +3,7 @@ import { createStore , applyMiddleware } from "redux"
 import createSagaMiddleware from "redux-saga"
 import rootReducer from "./reducers"
 import rootSaga from "./saga"
-import throttle from "lodash.throttle"
+//import throttle from "lodash.throttle"
 
 // Load persisted store state
 const loadState = () => {
