@@ -37,9 +37,9 @@ export const store = createStore( rootReducer ,persistedState,applyMiddleware( s
 //export const store = createStore( rootReducer ,applyMiddleware( sagaMiddleware ));
 sagaMiddleware.run(rootSaga);
 
-  store.subscribe(throttle(() => {
-    saveState({
-        notification: store.getState().notification
-    });
-  }, 1000));  
+  // store.subscribe(throttle(() => {
+  //   saveState({
+  //       notification: store.getState().notification
+  //   });
+  // }, 1000));  
 
