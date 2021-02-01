@@ -64,7 +64,7 @@ const App = () => {
                     <SEO title="App" />
                         <div className = {classes.page}>
                         <button>Install App</button>
-                            
+                        <a  href="https://www.irs.gov/pub/irs-pdf/f1040.pdf">TEST LINK FOR DOWNLOAD</a>    
                         </div>  
                 </Layout>
             </MuiThemeProvider> 
